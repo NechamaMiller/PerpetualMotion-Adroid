@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/card_status_bar"
+    android:layout_below="@+id/card_piles"
+    tools:showIn="@layout/content_main">
+
+    <LinearLayout
+        style="@style/Base.Widget.AppCompat.ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".42"
+            android:onClick="discardOneLowestOfSameSuit"
+            android:text="@string/discard_lower_rank_card_of_two_cards_having_same_suit"
+            android:textSize="@dimen/button_font_size"/>
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:onClick="discardBothOfSameRank"
+            android:text="@string/discard_two_cards_of_same_rank"
+            android:textSize="@dimen/button_font_size"/>
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".28"
+            android:onClick="dealOneCardToEachStack"
+            android:text="@string/deal_one_new_card_on_each_pile"
+            android:textSize="@dimen/button_font_size"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

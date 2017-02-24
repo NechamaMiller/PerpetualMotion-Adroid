@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.perpetual_motion.activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <include
+        android:id="@+id/card_piles"
+        layout="@layout/main_include_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        />
+
+    <include
+        android:id="@+id/card_buttons"
+        layout="@layout/main_include_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/card_status_bar"
+        android:layout_below="@+id/card_piles"
+        />
+
+    <include
+        android:id="@+id/card_status_bar"
+        layout="@layout/main_include_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        />
+</RelativeLayout>

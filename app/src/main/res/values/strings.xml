@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Perpetual Motion</string>
+    <string name="new_game">New Game</string>
+    <string name="undo">Undo</string>
+    <string name="about">About</string>
+    <string name="about_message">Original Java CLI version by Professor M Plonczak.
+        \n\nAdditional features and Android version by Professor S Abrahamson.
+        \n\nThanks to Touro College MCO 451 students for their ideas and suggestions.
+        \n\nHave fun!!</string>
+    <string name="action_settings">Settings</string>
+    <string name="OK">OK</string>
+
+    <string name="cards_in_stack">"Cards In Stack: "</string>
+    <string name="cards_to_discard">"Cards to Discard: "</string>
+    <string name="in_deck">"In Deck: "</string>
+    <string name="discard_two_cards_of_same_rank">Discard Two Cards of the Same Rank (number)</string>
+    <string name="discard_lower_rank_card_of_two_cards_having_same_suit">Discard One Lower-Ranked Card of Two Cards of the Same Suit</string>
+    <string name="deal_one_new_card_on_each_pile">Deal One New Card on top of Each Pile</string>
+    <string name="game_over">Game Over</string>
+    <string name="welcome_new_game">Welcome to a new Game!</string>
+    <string name="you_have_cleared_the_board">You have successfully cleared the board!</string>
+    <string name="no_more_turns_remain">No more valid turns remain.</string>
+    <string name="turn_error_discard_one">Please check off exactly one item to remove.</string>
+    <string name="turn_error_discard_two">Please check off two items of the same rank.</string>
+    <string name="title_no_cards_remain">No Cards Remain</string>
+    <string name="body_all_cards_dealt_to_stacks">All cards have been dealt to the stacks.</string>
+</resources>

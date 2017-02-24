@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.perpetual_motion.activities.MainActivity">
+    <item
+        android:id="@+id/action_undo"
+        android:title="@string/undo"
+        android:icon="@drawable/ic_action_undo"
+        app:showAsAction="ifRoom|withText"
+        android:onClick="undoLastMove"
+        />
+    <item
+        android:id="@+id/action_new_Game"
+        android:title="@string/new_game"
+        android:icon="@drawable/ic_action_new_game"
+        app:showAsAction="ifRoom|withText"
+        android:onClick="startNewGame"
+        />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        android:icon="@drawable/ic_action_info"
+        app:showAsAction="never"
+        />
+
+</menu>
